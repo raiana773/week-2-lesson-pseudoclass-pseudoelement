@@ -1,0 +1,61 @@
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+button:hover {
+  display: none;
+}
+
+/* первый список */
+li:first-child {
+  background-color: pink;
+}
+
+/* последний список */
+li:last-child {
+  background-color: aquamarine;
+}
+/* Butter */
+li:nth-child(2) {
+  background-color: burlywood;
+}
+
+/* убирает точки */
+ul {
+  list-style: none;
+}
+.bredcrumbs {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+/*before разделяет  */
+.bredcrumbs li + li::before {
+  content: "/";
+  padding: 0 7px;
+}
+
+.bredcrumbs li::after {
+  content: "*";
+  padding: 0 7px;
+}
+/* pointer ручка */
+button {
+  padding: 20px 35px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rebeccapurple;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: #8c96b8;
+}
